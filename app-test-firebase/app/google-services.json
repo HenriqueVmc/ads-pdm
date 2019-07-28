@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "809353538745",
+    "firebase_url": "https://pdm-test-firebase.firebaseio.com",
+    "project_id": "pdm-test-firebase",
+    "storage_bucket": "pdm-test-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809353538745:android:7a845afaa2a275b2",
+        "android_client_info": {
+          "package_name": "br.edu.ifsc.pdm.test_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "809353538745-ser2gikpp1sm8dcduqav5o1s7cb6tal7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.edu.ifsc.pdm.test_firebase",
+            "certificate_hash": "262d8cc40c70bb2a39655b40a84985634ff47c9d"
+          }
+        },
+        {
+          "client_id": "809353538745-jr5309eeplbj7t5q069g64b603191red.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTxCcbsJnlh5t5mtA2LTMsRtteYvp1_N0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "809353538745-jr5309eeplbj7t5q069g64b603191red.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
