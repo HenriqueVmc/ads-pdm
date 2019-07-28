@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lblData"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="00/00" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lblTituloHoraEntrada"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Entrada:" />
+
+            <TextView
+                android:id="@+id/lblHoraEntrada"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="00:00" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lblTituloHoraSaidaAlmoco"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Saída Almoço:" />
+
+            <TextView
+                android:id="@+id/lblHoraSaidaAlmoco"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="00:00" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lblTituloHoraRetornoAlmoco"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Retorno Almoço:" />
+
+            <TextView
+                android:id="@+id/lblHoraRetornoAlmoco"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="00:00" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lblTituloHoraSaida"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                    android:text="Saída:" />
+
+            <TextView
+                android:id="@+id/lblHoraSaida"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="00:00" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

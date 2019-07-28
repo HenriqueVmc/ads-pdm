@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaInicialActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/lblTituloHorasTrabalhadas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:text="Horas Trabalhadas:" />
+
+            <TextView
+                android:id="@+id/lblTituloHorasIntervalo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:text="Horas Intervalo:" />
+
+            <TextView
+                android:id="@+id/lblHorasTrabalhadas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_below="@id/lblTituloHorasTrabalhadas"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="30dp"
+                android:text="00:00" />
+
+            <TextView
+                android:id="@+id/lblHorasIntervalo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/lblTituloHorasIntervalo"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:text="00:00" />
+
+            <TextView
+                android:id="@+id/lblHoraEntrada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="19dp"
+                android:layout_below="@+id/lblHorasTrabalhadas"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:text="Hora de Início:" />
+
+            <EditText
+                android:id="@+id/txtHorasEntrada"
+                android:layout_width="110dp"
+                android:layout_height="49dp"
+                android:layout_below="@+id/lblHorasIntervalo"
+                android:layout_alignBaseline="@+id/lblHoraEntrada"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="00:00"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:focusable="false"/>
+
+
+            <TextView
+                android:id="@+id/lblHoraSaidaAlmoco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="19dp"
+                android:layout_below="@+id/txtHorasEntrada"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:text="Hora Saída(Almoço):" />
+
+            <EditText
+                android:id="@+id/txtHoraSaidaAlmoco"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtHorasEntrada"
+                android:layout_alignBaseline="@+id/lblHoraSaidaAlmoco"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="00:00"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:focusable="false"/>
+
+            <TextView
+                android:id="@+id/lblHorasRetornoAlmoco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="19dp"
+                android:layout_below="@+id/txtHoraSaidaAlmoco"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:text="Hora Retorno(Almoço):" />
+
+
+            <EditText
+                android:id="@+id/txtHorasRetornoAlmoco"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtHoraSaidaAlmoco"
+                android:layout_alignBaseline="@+id/lblHorasRetornoAlmoco"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="00:00"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:focusable="false"/>
+
+            <Button
+                android:id="@+id/btnPonto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lblHorasRetornoAlmoco"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:onClick="marcarPonto"
+                android:text="Marcar Ponto!" />
+
+
+            <TextView
+                android:id="@+id/lblHoraSaida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_below="@+id/btnPonto"
+                android:layout_marginTop="40dp"
+                android:layout_centerHorizontal="true"
+                android:text="Horário de Saída:" />
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lblHoraSaida"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp">
+
+                <Button
+                    android:id="@+id/btnEditar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lblHoraSaida"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:text="Editar"
+                    android:onClick="showTimePicker"/>
+
+                <Button
+                    android:id="@+id/btnSalvar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_below="@+id/lblHoraSaida"
+                    android:onClick="marcarPonto"
+                    android:text="Salvar"
+                    android:visibility="invisible"
+                    />
+
+                <Button
+                    android:id="@+id/btnConfig"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lblHoraSaida"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/btnEditar"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:onClick="configuracoes"
+                    android:text="Configuração" />
+
+                <Button
+                    android:id="@+id/btnRelatorio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lblHoraSaida"
+                    android:layout_toRightOf="@id/btnConfig"
+                    android:layout_row="0"
+                    android:layout_column="2"
+                    android:onClick="relatorio"
+                    android:text="Relatório" />
+            </GridLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
