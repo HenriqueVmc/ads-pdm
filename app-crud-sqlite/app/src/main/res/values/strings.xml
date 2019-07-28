@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Gerenciamento de Alunos</string>
+    <string name="btn_cadastrar">CADASTRAR</string>
+    <string name="btn_alterar">ALTERAR</string>
+    <string name="btn_excluir">EXCLUIR</string>
+    <string name="btn_pesquisar">PESQUISAR</string>
+    <string name="btn_listar">LISTAR</string>
+</resources>
