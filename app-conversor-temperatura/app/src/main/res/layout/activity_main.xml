@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="73dp">
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="144dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="51dp"
+        android:onClick="ConverterTemperatura"
+        android:text="Converter"
+        app:layout_constraintBottom_toTopOf="@+id/lblResult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rdbF" />
+
+    <RadioButton
+        android:id="@+id/rdbF"
+        android:layout_width="146dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginBottom="45dp"
+        android:onClick="onCheckedF"
+        android:text="Fahrenheit"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalcular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rdbK" />
+
+    <RadioButton
+        android:id="@+id/rdbK"
+        android:layout_width="88dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginBottom="22dp"
+        android:onClick="onCheckedK"
+        android:text="Kelvin"
+        app:layout_constraintBottom_toTopOf="@+id/rdbF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTemp" />
+
+    <EditText
+        android:id="@+id/txtTemp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="56dp"
+        android:ems="10"
+        android:hint="23"
+        android:inputType="numberDecimal|numberSigned"
+        app:layout_constraintBottom_toTopOf="@+id/rdbK"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblInforme"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblInforme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="8dp"
+        android:text="Informe a temperatura:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtTemp"
+        app:layout_constraintEnd_toStartOf="@+id/txtTemp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lblResult"
+        android:layout_width="0dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:text="00 X°"
+        android:textAlignment="center"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcular" />
+
+</android.support.constraint.ConstraintLayout>
